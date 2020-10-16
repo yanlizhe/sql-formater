@@ -1,15 +1,23 @@
 # sql-formater
 
-#### Usage
+## Update
 
-Settings for spring(describe the database type):
+**1.9.0.RELEASE**
+
+- Upload code
+
+## Usage
+
+**Settings for spring(describe the database type):**
+
 ``` xml
 <bean id="SqlConfiguration" class="net.xx.sqlFormater.SqlBeanFactory">
   <constructor-arg index="0" value="oracle" />
 </bean>
 ```
 
-A simple codding Example:
+**A simple codding Example:**
+
 ``` java
 	public Integer findType(String id) {
 		SqlStandardRead statement = CommonBeanFactory.getBean("SqlStandardRead", SqlStandardRead.class);
